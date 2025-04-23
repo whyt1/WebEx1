@@ -12,10 +12,9 @@ header {
     height: 64px;
     margin: 32px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color:aquamarine; /* debugging */
 }
+
 /*#region done */
 #logo {
     height: 64px;
@@ -36,6 +35,8 @@ header {
     line-height: normal;
     letter-spacing: 6px;
 }
+
+#logo span:hover {
+    color: #612999;
+}
 /*#endregion done */
-
-
