@@ -3,18 +3,42 @@
     padding: 0;
 }
 
-header, main, footer, nav, aside, section, div  {
+header, main, footer, nav, aside, div  {
     display: block;
 }
 
-header {
-    height: 64px;
-    margin: 32px 122px 32px 32px;
+body {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 32px 0 32px;
+    border-color: limegreen;
+    border-style: dotted;
+}
+
+main {
+    flex-grow: 1; 
+}
+
+main #part2 {
+    height: 797px;
+    background: url("/images/image_part2_background.svg") lightgray 50% / cover no-repeat;
 }
 
 /*#region done */
+
+header #wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: 32px;
+}
+
 #logo {
     height: 64px;
     display: flex;
@@ -60,4 +84,72 @@ nav a {
 nav #current {
     font-weight: 700;
 } 
+
+
+footer {
+    height: 287px;
+    background: #EFECFF;
+    color: #333;
+    font-family: Nunito;
+    font-style: normal;
+}
+
+footer #links section {
+    width: 126px;
+    height: 126px;
+    margin: 32px 150px 24px 32px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+footer #links h {
+    height: 28px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    text-transform: uppercase;
+}
+
+footer #links a {
+    height: 22px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer span {
+    display: block;
+    margin-top: 16px;
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+footer #icons {
+    margin-left: 32px;
+}
+
+footer #icons img {
+    margin-right: 24px;
+}
+
+footer #icons img#instagram {
+    width: 20px;
+    height: 20px;
+}
+
+footer #icons img#facebook {
+    width: 19.998px;
+    height: 19.878px;
+}
+
+footer #icons img#twitter {
+    width: 24.618px;
+    height: 20px;
+}
+
 /*#endregion done */
+

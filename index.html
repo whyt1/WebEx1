@@ -7,61 +7,71 @@
 		<title>Ex2 - HTML Structure & CSS & Positions - page 2</title>
 	</head>
 	<body>
-		<header>
-			<a href="#" id="logo">
-                <img src="images/logo_placeholder.svg">
-                <span>Company Name</span>
-            </a>
-            <nav>
-                <a id="current">Home</a>
-                <a>Our Product</a> 
-                <a>About</a>
-                <a>Contact</a>
-            </nav>
-		</header>
-        <main id="wrapper">
-			<section id="part2">
-                <h2>Title!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris arcu aenean in mauris elementum sed non.</p>
-			</section>
-			<section id="part3">
-                <h3>Title 2!</h3>
-                <p>Lorem ipsum dolor sit amet,</p>
-                <p>consectetur adipiscing elit.</p>
-                <p>Mi mauris arcu aenean in mauris elementum sed non.</p>
-			</section>
-			<section id="part4">
-                <article>
-                    <img src="" alt="" />
-                    <section class="heart-icon"></section>
-                    <h3>Product Name</h3>
-                    <p>
-                        Long Product Description describing the product in a long paragraph 
-                    </p>
-                    <span>$Price us</span>
-                    <section class="cart-icon"></section>
-                </article> 
-			</section>
-		</main>
+        <header>
+            <div id="wrapper">
+                <a href="#" id="logo">
+                    <img src="images/logo_placeholder.svg">
+                    <span>Product</span>
+                </a>
+                <nav>
+                    <a id="current">Home</a>
+                    <a>Our Product</a> 
+                    <a>About</a>
+                    <a>Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>                
+            <section id="part2">
+                <div id="wrapper">
+                    <h2>Title!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris arcu aenean in mauris elementum sed non.</p>
+                </div>
+            </section>
+            <div id="wrapper">
+                <section id="part3">
+                    <h3>Title 2!</h3>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <p>consectetur adipiscing elit.</p>
+                    <p>Mi mauris arcu aenean in mauris elementum sed non.</p>
+                </section>
+                <section id="part4">
+                    <article>
+                        <img src="" alt="" />
+                        <section class="heart-icon"></section>
+                        <h3>Product Name</h3>
+                        <p>
+                            Long Product Description describing the product in a long paragraph 
+                        </p>
+                        <span>$Price us</span>
+                        <section class="cart-icon"></section>
+                    </article> 
+                </section>
+            </div>
+        </main>
         <footer>
-            <section>
-                <h6>WHO ARE WE</h6>
-                <a>About</a>
-                <a>Team</a>
-                <a>Work With Us</a>
-            </section>
-            <section>
-                <h6>FOLLOW US</h6>
-                <a>Twitter</a>
-                <a>Facebook</a>
-                <a>Instagram</a>
-            </section>
-            <section>
-                <img src="" >
-                <img src="" >
-                <img src="" >
-            </section>
-            <span>© 2024 SMOOTHIES</span>
+            <div id="wrapper">
+                <div id="links">
+                    <section>
+                        <h>WHO ARE WE</h>
+                        <a>About</a>
+                        <a>Team</a>
+                        <a>Work With Us</a>
+                    </section>
+                    <section>
+                        <h>FOLLOW US</h>
+                        <a>Twitter</a>
+                        <a>Facebook</a>
+                        <a>Instagram</a>
+                    </section>
+                </div>
+                <section id="icons">
+                    <img id="twitter" src="images/icon_twitter.svg" >
+                    <img id="facebook" src="images/icon_facebook.svg" >
+                    <img id="instagram" src="images/logo_instagram.svg" >
+                </section>
+                <span>© 2024 SMOOTHIES</span>
+            </div>
         </footer>
 	</body>
 </html>
