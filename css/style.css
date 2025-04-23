@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer, nav, aside, section, div  {
+    display: block;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:aquamarine; /* debugging */
+}
+/*#region done */
+#logo {
+    height: 64px;
+    display: flex;
+    text-decoration: none;
+}
+
+#logo span {
+    height: 33px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    color: #3E3F43;
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6px;
+}
+/*#endregion done */
+
+
