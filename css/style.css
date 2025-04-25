@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 header, main, footer, nav, aside, div  {
@@ -102,7 +103,7 @@ footer #links section {
     flex-direction: column;
 }
 
-footer #links h {
+footer #links h4 {
     height: 28px;
     margin-bottom: 8px;
     font-size: 18px;
@@ -134,21 +135,21 @@ footer #icons {
     margin-left: 32px;
 }
 
-footer #icons img {
+footer #icons a {
     margin-right: 24px;
 }
 
-footer #icons img#instagram {
+footer #icons a#instagram {
     width: 20px;
     height: 20px;
 }
 
-footer #icons img#facebook {
+footer #icons a#facebook {
     width: 19.998px;
     height: 19.878px;
 }
 
-footer #icons img#twitter {
+footer #icons a#twitter {
     width: 24.618px;
     height: 20px;
 }
