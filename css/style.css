@@ -27,7 +27,7 @@ main {
 }
 
 main #part2 {
-    height: 797px;
+    height: 797px; 
     background: url("/images/image_part2_background.svg") lightgray 50% / cover no-repeat;
 }
 
@@ -98,7 +98,7 @@ footer {
 footer #links section {
     width: 126px;
     height: 126px;
-    margin: 32px 150px 24px 32px;
+    margin: 32px 150px 24px 0px;
     display: inline-flex;
     flex-direction: column;
 }
@@ -125,14 +125,9 @@ footer #links a {
 footer span {
     display: block;
     margin-top: 16px;
-    margin-left: 32px;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
-}
-
-footer #icons {
-    margin-left: 32px;
 }
 
 footer #icons a {
