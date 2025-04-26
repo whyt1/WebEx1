@@ -14,10 +14,11 @@ body {
     height: 100vh;
 }
 
-#content {
+* #content {
+    box-sizing: border-box; 
     max-width: 1200px;
     margin: 0 auto; 
-    padding: 0 32px 0 32px;
+    padding: 0 32px 0px 32px;
     /* debug */
     border-color: limegreen;
     border-style: dotted;
@@ -38,7 +39,6 @@ main #part3 h3 {
 }
 
 main #part3 p {
-    box-sizing: border-box; 
     margin-top: 32px;
     color: #000;
     text-align: justify;
@@ -54,7 +54,8 @@ header #content {
     display: flex;
     justify-content: space-between;
     height: 64px;
-    padding: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 #logo {

@@ -7,38 +7,50 @@
 		<title>Ex2 - HTML Structure & CSS & Positions - page 2</title>
 	</head>
 	<body>
-		<header>
-			<a href="#" id="logo">
-                <img src="images/logo_placeholder.svg">
-                <span>Company Name</span>
-            </a>
-            <nav>
-                <a>Home</a>
-                <a id="current">Our Product</a> 
-                <a>About</a>
-                <a>Contact</a>
-            </nav>
-		</header>
+        <header>
+            <div id="content">
+                <a href="#" id="logo">
+                    <img src="images/logo_placeholder.svg">
+                    <span>Product</span>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="page2.html" id="current">Our Product</a> 
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
         
         <footer>
-            <section>
-                <h6>WHO ARE WE</h6>
-                <a>About</a>
-                <a>Team</a>
-                <a>Work With Us</a>
-            </section>
-            <section>
-                <h6>FOLLOW US</h6>
-                <a>Twitter</a>
-                <a>Facebook</a>
-                <a>Instagram</a>
-            </section>
-            <section>
-                <img src="" >
-                <img src="" >
-                <img src="" >
-            </section>
-            <span>© 2024 SMOOTHIES</span>
+            <div id="content">
+                <div id="links">
+                    <section>
+                        <h4>WHO ARE WE</h4>
+                        <a href="#">About</a>
+                        <a href="#">Team</a>
+                        <a href="#">Work With Us</a>
+                    </section>
+                    <section>
+                        <h4>FOLLOW US</h4>
+                        <a href="https://www.twitter.com">Twitter</a>
+                        <a href="https://www.facebook.com">Facebook</a>
+                        <a href="https://www.instagram.com">Instagram</a>
+                    </section>
+                </div>
+                <section id="icons">
+                    <a id="twitter" href="https://www.twitter.com">                    
+                        <img src="images/icon_twitter.svg" >
+                    </a>
+                    <a id="facebook" href="https://www.facebook.com">                    
+                        <img src="images/icon_facebook.svg" >
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com">                    
+                        <img src="images/logo_instagram.svg" >
+                    </a>
+                </section>
+                <span>© 2024 SMOOTHIES</span>
+            </div>
         </footer>
 	</body>
 </html>
