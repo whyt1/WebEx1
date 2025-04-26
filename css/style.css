@@ -19,10 +19,13 @@ body {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 0 32px 0px 32px;
-    /* debug */
-    border-color: limegreen;
-    border-style: dotted;
 }
+
+main {
+    flex-grow: 1; 
+}
+
+/* #region header */
 
 header #content {
     display: flex;
@@ -80,9 +83,9 @@ nav #current {
     font-weight: 700;
 } 
 
-main {
-    flex-grow: 1; 
-}
+/* #endregion header */
+
+/* #region page1 */
 
 #part2 {
     height: 797px; 
@@ -233,6 +236,10 @@ main {
     line-height: normal;
 }
 
+/* #endregion page1 */
+
+/* #region page2 */
+
 #part5 {
     display: flex;
     justify-content: space-between;
@@ -240,7 +247,68 @@ main {
 
 #part5 img {
     height: 300px;
+    border: 4px solid #E6DBFE;
 }
+
+#part6 h3 {
+    margin-top: 32px;
+    color: #612999;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+}
+
+#part6 ol {
+    margin-top: 32px;
+    list-style: none;
+}
+
+#part6 li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#part6 li p {
+    margin-left: 16px;
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 58.333% */
+}
+
+#icon-rocket {
+    display: grid;
+    place-items: center;
+    width: 82px;
+    height: 82px;
+    border-radius: 46.5px;
+    background: #612999;
+    backdrop-filter: blur(10px);
+}
+
+#icon-rocket img {
+    width: 29px;
+    height: 42.385px;
+}
+
+#part7 h3 {
+    margin-top: 32px;
+    color: #612999;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+}
+
+/* #endregion page2 */
+
+/* #region footer */
 
 footer {
     margin-top: 32px;
@@ -309,3 +377,4 @@ footer #icons a#twitter {
     height: 20px;
 }
 
+/* #endregion footer */

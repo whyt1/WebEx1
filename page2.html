@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
+	<head>    
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">		
 		<title>Ex2 - HTML Structure & CSS & Positions - page 2</title>
 	</head>
 	<body>
@@ -27,6 +30,68 @@
                     <img src="images/image_product1.svg"></img>
                     <img src="images/image_card1.svg"></img>
                     <img src="images/image_product3.svg"></img>
+                </section>
+                <section id="part6">
+                    <h3>List of Drinks</h3>
+                    <ol>
+                        <li>
+                            <span id="icon-rocket">
+                                <img src="images/icon_rocket.svg"></img>
+                            </span>
+                            <p>Aloha Pineapple</p>
+                        </li>
+                        <li>
+                            <span id="icon-rocket">
+                                <img src="images/icon_rocket.svg"></img>
+                            </span>
+                            <p>Caribbean Passion</p>
+                        </li>
+                        <li>                            
+                            <span id="icon-rocket">
+                                <img src="images/icon_rocket.svg"></img>
+                            </span>
+                            <p>Mango-a-go-go</p>
+                        </li>
+                        <li>
+                            <span id="icon-rocket">
+                                <img src="images/icon_rocket.svg"></img>
+                            </span>
+                            <p>Strawberries ‘n Cream</p>
+                        </li>
+                    </ol>
+                </section>
+                <section id="part7">
+                    <h3>Your Choice</h3>
+                    <canvas id="unity-canvas" width=1024 height=768 tabindex="-1" style="width: 1024px; height: 768px; background: #231F20"></canvas>
+                    <script src="Build/WebGLBuilds.loader.js"></script>
+                    <script>
+                    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                        // Mobile device style: fill the whole browser client area with the game canvas:
+                        var meta = document.createElement('meta');
+                        meta.name = 'viewport';
+                        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                        document.getElementsByTagName('head')[0].appendChild(meta);
+
+                        var canvas = document.querySelector("#unity-canvas");
+                        canvas.style.width = "100%";
+                        canvas.style.height = "100%";
+                        canvas.style.position = "fixed";
+
+                        document.body.style.textAlign = "left";
+                    }
+
+                    createUnityInstance(document.querySelector("#unity-canvas"), {
+                        dataUrl: "Build/WebGLBuilds.data.br",
+                        frameworkUrl: "Build/WebGLBuilds.framework.js.br",
+                        codeUrl: "Build/WebGLBuilds.wasm.br",
+                        streamingAssetsUrl: "StreamingAssets",
+                        companyName: "YamTamim",
+                        productName: "SolidDemo",
+                        productVersion: "1.0",
+                        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+                        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+                    });
+                    </script>
                 </section>
             </div>
         </main>
