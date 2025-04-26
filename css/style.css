@@ -14,26 +14,43 @@ body {
     height: 100vh;
 }
 
-#wrapper {
+#content {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 0 32px 0 32px;
+    /* debug */
     border-color: limegreen;
     border-style: dotted;
 }
 
-main {
-    flex-grow: 1; 
+main #part3 {
+    margin-top: 32px;
 }
 
-main #part2 {
-    height: 797px; 
-    background: url("/images/image_part2_background.svg") lightgray 50% / cover no-repeat;
+main #part3 h3 {
+    height: 40px;
+    color: #612999;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+}
+
+main #part3 p {
+    box-sizing: border-box; 
+    margin-top: 32px;
+    color: #000;
+    text-align: justify;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /*#region done */
 
-header #wrapper {
+header #content {
     display: flex;
     justify-content: space-between;
     height: 64px;
@@ -42,6 +59,7 @@ header #wrapper {
 
 #logo {
     height: 64px;
+    margin-right: 32px;
     display: flex;
     text-decoration: none;
 }
@@ -67,13 +85,14 @@ header #wrapper {
 nav {
     display: flex;
     justify-content: space-evenly;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 nav a {
     height: 41px;
     margin-top: 16px;
     margin-bottom: 7px;
-    margin-left: 64px;
     color: #612999;
     font-family: Nunito;
     font-size: 30px;
@@ -86,6 +105,34 @@ nav #current {
     font-weight: 700;
 } 
 
+main {
+    flex-grow: 1; 
+}
+
+main #part2 {
+    height: 797px; 
+    background: url("/images/image_part2_background.svg") lightgray 50% / cover no-repeat;
+}
+
+main #part2 h2 {
+    color: #612999;
+    height: 131px;
+    font-family: Nunito;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+main #part2 p {
+    max-width: 448px; 
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 footer {
     height: 287px;
@@ -93,6 +140,10 @@ footer {
     color: #333;
     font-family: Nunito;
     font-style: normal;
+}
+
+footer #content {
+    margin-bottom: 50px;
 }
 
 footer #links section {
