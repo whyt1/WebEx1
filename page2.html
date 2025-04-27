@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>    
-        <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,92 +10,92 @@
 	</head>
 	<body>
         <header>
-            <div id="content">
+            <div class="content">
                 <a href="#" id="logo">
-                    <img src="images/logo_placeholder.svg">
-                    <span>Product</span>
+                    <img src="images/logo_placeholder.svg" alt="logo">
+                    <span>Games</span>
                 </a>
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="page2.html" id="current">Our Product</a> 
+                    <a href="page2.html" id="current">Our Games</a> 
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                 </nav>
             </div>
         </header>
         <main>
-            <div id="content">
-                <section id="part5">
-                    <img src="images/image_product1.svg"></img>
-                    <img src="images/image_card1.svg"></img>
-                    <img src="images/image_product3.svg"></img>
-                </section>
+            <div class="content">
+                <div id="part5">
+                    <img src="images/image_product1.jpg" alt="image_product1">
+                    <img src="images/image_product2.jpg" alt="image_product2">
+                    <img src="images/image_product3.jpg" alt="image_product3">
+                </div>
                 <section id="part6">
-                    <h3>List of Drinks</h3>
+                    <h3>List of Games</h3>
                     <ol>
                         <li>
-                            <span id="icon-rocket">
-                                <img src="images/icon_rocket.svg"></img>
+                            <span class="icon-rocket">
+                                <img src="images/icon_rocket.svg" alt="icon=rocket">
                             </span>
-                            <p>Aloha Pineapple</p>
+                            <p>Quoridor</p>
                         </li>
                         <li>
-                            <span id="icon-rocket">
-                                <img src="images/icon_rocket.svg"></img>
+                            <span class="icon-rocket">
+                                <img src="images/icon_rocket.svg" alt="icon=rocket">
                             </span>
-                            <p>Caribbean Passion</p>
+                            <p>Exploding Kittens</p>
                         </li>
                         <li>                            
-                            <span id="icon-rocket">
-                                <img src="images/icon_rocket.svg"></img>
+                            <span class="icon-rocket">
+                                <img src="images/icon_rocket.svg" alt="icon=rocket">
                             </span>
-                            <p>Mango-a-go-go</p>
+                            <p>Unity</p>
                         </li>
                         <li>
-                            <span id="icon-rocket">
-                                <img src="images/icon_rocket.svg"></img>
+                            <span class="icon-rocket">
+                                <img src="images/icon_rocket.svg" alt="icon=rocket">
                             </span>
-                            <p>Strawberries ‘n Cream</p>
+                            <p>Solid Demo</p>
                         </li>
                     </ol>
                 </section>
                 <section id="part7">
-                    <h3>Your Choice</h3>
+                    <h3>My Game</h3>
                     <canvas id="unity-canvas" width=1024 height=768 tabindex="-1" style="width: 1024px; height: 768px; background: #231F20"></canvas>
                     <script src="Build/WebGLBuilds.loader.js"></script>
                     <script>
-                    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
                         // Mobile device style: fill the whole browser client area with the game canvas:
                         var meta = document.createElement('meta');
                         meta.name = 'viewport';
                         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
                         document.getElementsByTagName('head')[0].appendChild(meta);
-
+                
                         var canvas = document.querySelector("#unity-canvas");
                         canvas.style.width = "100%";
                         canvas.style.height = "100%";
                         canvas.style.position = "fixed";
-
+                
                         document.body.style.textAlign = "left";
-                    }
-
-                    createUnityInstance(document.querySelector("#unity-canvas"), {
-                        dataUrl: "Build/WebGLBuilds.data.br",
-                        frameworkUrl: "Build/WebGLBuilds.framework.js.br",
-                        codeUrl: "Build/WebGLBuilds.wasm.br",
+                        }
+                
+                        createUnityInstance(document.querySelector("#unity-canvas"), {
+                        dataUrl: "Build/WebGLBuilds.data",
+                        frameworkUrl: "Build/WebGLBuilds.framework.js",
+                        codeUrl: "Build/WebGLBuilds.wasm",
                         streamingAssetsUrl: "StreamingAssets",
                         companyName: "YamTamim",
                         productName: "SolidDemo",
                         productVersion: "1.0",
                         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-                    });
+                        });
                     </script>
                 </section>
             </div>
         </main>
         <footer>
-            <div id="content">
+            <div class="content">
                 <div id="links">
                     <section>
                         <h4>WHO ARE WE</h4>
@@ -111,17 +110,17 @@
                         <a href="https://www.instagram.com">Instagram</a>
                     </section>
                 </div>
-                <section id="icons">
+                <div id="icons">
                     <a id="twitter" href="https://www.twitter.com">                    
-                        <img src="images/icon_twitter.svg" >
+                        <img src="images/icon_twitter.svg" alt="icon-twitter">
                     </a>
                     <a id="facebook" href="https://www.facebook.com">                    
-                        <img src="images/icon_facebook.svg" >
+                        <img src="images/icon_facebook.svg" alt="icon-facebook">
                     </a>
                     <a id="instagram" href="https://www.instagram.com">                    
-                        <img src="images/logo_instagram.svg" >
+                        <img src="images/icon_instagram.svg" alt="icon-instagram">
                     </a>
-                </section>
+                </div>
                 <span>© 2024 SMOOTHIES</span>
             </div>
         </footer>

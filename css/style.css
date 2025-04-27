@@ -14,7 +14,7 @@ body {
     height: 100vh;
 }
 
-#content {
+.content {
     box-sizing: border-box; 
     max-width: 1200px;
     margin: 0 auto; 
@@ -27,7 +27,7 @@ main {
 
 /* #region header */
 
-header #content {
+header .content {
     display: flex;
     justify-content: space-between;
     height: 64px;
@@ -45,6 +45,7 @@ header #content {
 #logo span {
     height: 33px;
     margin-top: 21px;
+    margin-left: 10px;
     margin-bottom: 10px;
     color: #3E3F43;
     text-transform: uppercase;
@@ -89,7 +90,7 @@ nav #current {
 
 #part2 {
     height: 797px; 
-    background: url("/images/image_part2_bg.svg") lightgray 50% / cover no-repeat;
+    background: url("/images/image_part2_bg.jpg") lightgray 50% / cover no-repeat;
 }
 
 #part2 h2 {
@@ -100,6 +101,7 @@ nav #current {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    text-shadow:2px 2px 3px #E6DBFE;
 }
 
 #part2 p {
@@ -110,6 +112,7 @@ nav #current {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-shadow:2px 2px 3px #E6DBFE;
 }
 
 #part3 {
@@ -146,9 +149,9 @@ nav #current {
     line-height: 40px; /* 100% */
 }
 
-#card {
+.card {
     display: inline-block;
-    max-width: 376px;
+    width: 376px;
     height: 496px;
     flex-shrink: 0;
     margin-right: 32px;
@@ -158,14 +161,14 @@ nav #current {
     box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
 }
 
-#card img {
+.card img {
     width: 100%; 
     height: 276px;
     border-radius: 38px;
     object-fit: cover;
 } 
 
-#card #icon-heart {
+.card .icon-heart {
     position: absolute;
     border-radius: 50%;
     background-color: #EFECFF;
@@ -176,13 +179,13 @@ nav #current {
     height: 47px;
 }
 
-#card #icon-heart img {
+.card .icon-heart img {
     width: 23px;
     height: 20px;
     border-radius: 0;
 }
 
-#card #icon-cart {
+.card .icon-cart {
     position: absolute;
     border-radius: 50%;
     background-color: #612999;
@@ -193,13 +196,13 @@ nav #current {
     height: 63px;
 }
 
-#card #icon-cart img {
+.card .icon-cart img {
     width: 31px;
     height: 31px;
     border-radius: 0;
 }
 
-#card h4 {
+.card h4 {
     margin-top: 20px;
     margin-left: 32px;
     color: #000;
@@ -211,7 +214,7 @@ nav #current {
     line-height: normal;
 }
 
-#card p {
+.card p {
     width: 315px;
     margin-top: 7px;
     margin-left: 32px;
@@ -223,7 +226,7 @@ nav #current {
     line-height: normal;
 }
 
-#card #price {
+.card .price {
     display: inline-block;
     margin-top: 32px;
     margin-left: 32px;
@@ -281,7 +284,7 @@ nav #current {
     line-height: 14px; /* 58.333% */
 }
 
-#icon-rocket {
+.icon-rocket {
     display: grid;
     place-items: center;
     width: 82px;
@@ -291,13 +294,14 @@ nav #current {
     backdrop-filter: blur(10px);
 }
 
-#icon-rocket img {
+.icon-rocket img {
     width: 29px;
     height: 42.385px;
 }
 
 #part7 h3 {
     margin-top: 32px;
+    margin-bottom: 32px;
     color: #612999;
     font-family: Rubik;
     font-size: 40px;
@@ -319,7 +323,7 @@ footer {
     font-style: normal;
 }
 
-footer #content {
+footer .content {
     margin-bottom: 50px;
 }
 
